@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		20BD0F5B270B08400066ACF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD0F5A270B08400066ACF5 /* AppDelegate.swift */; };
 		20BD0F5D270B08400066ACF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD0F5C270B08400066ACF5 /* SceneDelegate.swift */; };
-		20BD0F5F270B08400066ACF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD0F5E270B08400066ACF5 /* ViewController.swift */; };
 		20BD0F62270B08400066ACF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BD0F60270B08400066ACF5 /* Main.storyboard */; };
 		20BD0F64270B08420066ACF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BD0F63270B08420066ACF5 /* Assets.xcassets */; };
 		20BD0F67270B08420066ACF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BD0F65270B08420066ACF5 /* LaunchScreen.storyboard */; };
 		20BD0F72270B08420066ACF5 /* BSW_Diplom_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD0F71270B08420066ACF5 /* BSW_Diplom_1Tests.swift */; };
 		20BD0F7C270B08420066ACF5 /* BSW_Diplom_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD0F7B270B08420066ACF5 /* BSW_Diplom_1UITests.swift */; };
 		20BD0F7E270B08420066ACF5 /* BSW_Diplom_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD0F7D270B08420066ACF5 /* BSW_Diplom_1UITestsLaunchTests.swift */; };
+		20C164C9270B0F5E00C98437 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C164C8270B0F5E00C98437 /* CategoriesViewController.swift */; };
+		20C164CB270B0F8600C98437 /* SubCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C164CA270B0F8600C98437 /* SubCategoriesViewController.swift */; };
+		20C164CD270B104200C98437 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C164CC270B104200C98437 /* CartViewController.swift */; };
+		20C164CF270B107500C98437 /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C164CE270B107500C98437 /* GoodsViewController.swift */; };
 		78CD18F1A83B013F74737F45 /* Pods_BSW_Diplom_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA28A36009622CAEC4FE1E5 /* Pods_BSW_Diplom_1.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +43,6 @@
 		20BD0F57270B08400066ACF5 /* BSW_Diplom_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSW_Diplom_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BD0F5A270B08400066ACF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BD0F5C270B08400066ACF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20BD0F5E270B08400066ACF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20BD0F61270B08400066ACF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20BD0F63270B08420066ACF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BD0F66270B08420066ACF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,10 @@
 		20BD0F77270B08420066ACF5 /* BSW_Diplom_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSW_Diplom_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BD0F7B270B08420066ACF5 /* BSW_Diplom_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSW_Diplom_1UITests.swift; sourceTree = "<group>"; };
 		20BD0F7D270B08420066ACF5 /* BSW_Diplom_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSW_Diplom_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20C164C8270B0F5E00C98437 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		20C164CA270B0F8600C98437 /* SubCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesViewController.swift; sourceTree = "<group>"; };
+		20C164CC270B104200C98437 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		20C164CE270B107500C98437 /* GoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
 		322EFE15AFDC833EC8B3532C /* Pods-BSW_Diplom_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSW_Diplom_1.release.xcconfig"; path = "Target Support Files/Pods-BSW_Diplom_1/Pods-BSW_Diplom_1.release.xcconfig"; sourceTree = "<group>"; };
 		3AA28A36009622CAEC4FE1E5 /* Pods_BSW_Diplom_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSW_Diplom_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E03C0363477E2754CE4F121 /* Pods-BSW_Diplom_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSW_Diplom_1.debug.xcconfig"; path = "Target Support Files/Pods-BSW_Diplom_1/Pods-BSW_Diplom_1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,7 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				20BD0F60270B08400066ACF5 /* Main.storyboard */,
-				20BD0F5E270B08400066ACF5 /* ViewController.swift */,
+				20C164C8270B0F5E00C98437 /* CategoriesViewController.swift */,
+				20C164CA270B0F8600C98437 /* SubCategoriesViewController.swift */,
+				20C164CE270B107500C98437 /* GoodsViewController.swift */,
+				20C164CC270B104200C98437 /* CartViewController.swift */,
 				20BD0F68270B08420066ACF5 /* Info.plist */,
 				20BD0F8A270B089D0066ACF5 /* Other */,
 			);
@@ -334,9 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20BD0F5F270B08400066ACF5 /* ViewController.swift in Sources */,
 				20BD0F5B270B08400066ACF5 /* AppDelegate.swift in Sources */,
+				20C164CB270B0F8600C98437 /* SubCategoriesViewController.swift in Sources */,
+				20C164CD270B104200C98437 /* CartViewController.swift in Sources */,
 				20BD0F5D270B08400066ACF5 /* SceneDelegate.swift in Sources */,
+				20C164C9270B0F5E00C98437 /* CategoriesViewController.swift in Sources */,
+				20C164CF270B107500C98437 /* GoodsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
