@@ -6,3 +6,22 @@
 //
 
 import Foundation
+
+class AllCategoriesInfo{
+    struct Info_Mass: Decodable{
+        var name: String,
+            sortOrder: String,
+            image: String,
+            iconImage: String,
+            iconImageActive: String,
+            subcategories: [Subcategories?]
+    }
+    
+    struct Subcategories: Decodable{
+        var id: String,
+            sortOrder: String,
+            iconImage: String?,
+            name: String,
+            type: String
+    }
+}
