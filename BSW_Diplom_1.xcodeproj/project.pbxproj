@@ -19,6 +19,27 @@
 		20C164CB270B0F8600C98437 /* SubCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C164CA270B0F8600C98437 /* SubCategoriesViewController.swift */; };
 		20C164CD270B104200C98437 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C164CC270B104200C98437 /* CartViewController.swift */; };
 		20C164CF270B107500C98437 /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C164CE270B107500C98437 /* GoodsViewController.swift */; };
+		20F2BCF9270C68A9009EF10F /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BCF8270C68A9009EF10F /* GoodViewController.swift */; };
+		20F2BD06270C6961009EF10F /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD05270C6961009EF10F /* CartViewModel.swift */; };
+		20F2BD08270C696D009EF10F /* GoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD07270C696D009EF10F /* GoodViewModel.swift */; };
+		20F2BD0A270C6979009EF10F /* GoodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD09270C6979009EF10F /* GoodsViewModel.swift */; };
+		20F2BD0C270C6986009EF10F /* SubCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD0B270C6986009EF10F /* SubCategoriesViewModel.swift */; };
+		20F2BD0E270C6992009EF10F /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD0D270C6992009EF10F /* CategoriesViewModel.swift */; };
+		20F2BD10270C69A2009EF10F /* CategoriesObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD0F270C69A2009EF10F /* CategoriesObj.swift */; };
+		20F2BD12270C69AE009EF10F /* SubCategoriesObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD11270C69AE009EF10F /* SubCategoriesObj.swift */; };
+		20F2BD14270C69BD009EF10F /* GoodsObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD13270C69BD009EF10F /* GoodsObj.swift */; };
+		20F2BD16270C69C4009EF10F /* CartObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD15270C69C4009EF10F /* CartObj.swift */; };
+		20F2BD18270C69D2009EF10F /* SaveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD17270C69D2009EF10F /* SaveInfo.swift */; };
+		20F2BD1A270C69DC009EF10F /* RemoveOldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD19270C69DC009EF10F /* RemoveOldInfo.swift */; };
+		20F2BD1C270C69F9009EF10F /* CategoriesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD1B270C69F9009EF10F /* CategoriesStruct.swift */; };
+		20F2BD1E270C6A02009EF10F /* GoodsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD1D270C6A02009EF10F /* GoodsStruct.swift */; };
+		20F2BD20270C6A0E009EF10F /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD1F270C6A0E009EF10F /* CategoriesLoader.swift */; };
+		20F2BD22270C6A16009EF10F /* GoodsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD21270C6A16009EF10F /* GoodsLoader.swift */; };
+		20F2BD24270C6A2D009EF10F /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD23270C6A2D009EF10F /* CartTableViewCell.swift */; };
+		20F2BD26270C6A49009EF10F /* GoodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD25270C6A49009EF10F /* GoodsTableViewCell.swift */; };
+		20F2BD28270C6A66009EF10F /* SubCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD27270C6A66009EF10F /* SubCategoriesTableViewCell.swift */; };
+		20F2BD2A270C6A6F009EF10F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD29270C6A6F009EF10F /* CategoriesTableViewCell.swift */; };
+		20F2BD2C270C6A91009EF10F /* GoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD2B270C6A91009EF10F /* GoodsCollectionViewCell.swift */; };
 		78CD18F1A83B013F74737F45 /* Pods_BSW_Diplom_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA28A36009622CAEC4FE1E5 /* Pods_BSW_Diplom_1.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +77,27 @@
 		20C164CA270B0F8600C98437 /* SubCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesViewController.swift; sourceTree = "<group>"; };
 		20C164CC270B104200C98437 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		20C164CE270B107500C98437 /* GoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
+		20F2BCF8270C68A9009EF10F /* GoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
+		20F2BD05270C6961009EF10F /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		20F2BD07270C696D009EF10F /* GoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodViewModel.swift; sourceTree = "<group>"; };
+		20F2BD09270C6979009EF10F /* GoodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsViewModel.swift; sourceTree = "<group>"; };
+		20F2BD0B270C6986009EF10F /* SubCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesViewModel.swift; sourceTree = "<group>"; };
+		20F2BD0D270C6992009EF10F /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		20F2BD0F270C69A2009EF10F /* CategoriesObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesObj.swift; sourceTree = "<group>"; };
+		20F2BD11270C69AE009EF10F /* SubCategoriesObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesObj.swift; sourceTree = "<group>"; };
+		20F2BD13270C69BD009EF10F /* GoodsObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsObj.swift; sourceTree = "<group>"; };
+		20F2BD15270C69C4009EF10F /* CartObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartObj.swift; sourceTree = "<group>"; };
+		20F2BD17270C69D2009EF10F /* SaveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveInfo.swift; sourceTree = "<group>"; };
+		20F2BD19270C69DC009EF10F /* RemoveOldInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveOldInfo.swift; sourceTree = "<group>"; };
+		20F2BD1B270C69F9009EF10F /* CategoriesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesStruct.swift; sourceTree = "<group>"; };
+		20F2BD1D270C6A02009EF10F /* GoodsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsStruct.swift; sourceTree = "<group>"; };
+		20F2BD1F270C6A0E009EF10F /* CategoriesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesLoader.swift; sourceTree = "<group>"; };
+		20F2BD21270C6A16009EF10F /* GoodsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsLoader.swift; sourceTree = "<group>"; };
+		20F2BD23270C6A2D009EF10F /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		20F2BD25270C6A49009EF10F /* GoodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoodsTableViewCell.swift; path = BSW_Diplom_1/AllGoodsVC/GoodsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		20F2BD27270C6A66009EF10F /* SubCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		20F2BD29270C6A6F009EF10F /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		20F2BD2B270C6A91009EF10F /* GoodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsCollectionViewCell.swift; sourceTree = "<group>"; };
 		322EFE15AFDC833EC8B3532C /* Pods-BSW_Diplom_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSW_Diplom_1.release.xcconfig"; path = "Target Support Files/Pods-BSW_Diplom_1/Pods-BSW_Diplom_1.release.xcconfig"; sourceTree = "<group>"; };
 		3AA28A36009622CAEC4FE1E5 /* Pods_BSW_Diplom_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSW_Diplom_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E03C0363477E2754CE4F121 /* Pods-BSW_Diplom_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSW_Diplom_1.debug.xcconfig"; path = "Target Support Files/Pods-BSW_Diplom_1/Pods-BSW_Diplom_1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,13 +154,16 @@
 		20BD0F59270B08400066ACF5 /* BSW_Diplom_1 */ = {
 			isa = PBXGroup;
 			children = (
-				20BD0F60270B08400066ACF5 /* Main.storyboard */,
-				20C164C8270B0F5E00C98437 /* CategoriesViewController.swift */,
-				20C164CA270B0F8600C98437 /* SubCategoriesViewController.swift */,
-				20C164CE270B107500C98437 /* GoodsViewController.swift */,
-				20C164CC270B104200C98437 /* CartViewController.swift */,
 				20BD0F68270B08420066ACF5 /* Info.plist */,
 				20BD0F8A270B089D0066ACF5 /* Other */,
+				20BD0F60270B08400066ACF5 /* Main.storyboard */,
+				20F2BCFC270C68D1009EF10F /* CategoriesVC */,
+				20F2BCFD270C68DF009EF10F /* SubCategoriesVC */,
+				20F2BCFE270C68EB009EF10F /* AllGoodsVC */,
+				20F2BCFF270C68F9009EF10F /* GoodVC */,
+				20F2BD00270C6907009EF10F /* CartVC */,
+				20F2BCFA270C68B4009EF10F /* ToLoad_Alamofire */,
+				20F2BCFB270C68C4009EF10F /* ToCache_Realm */,
 			);
 			path = BSW_Diplom_1;
 			sourceTree = "<group>";
@@ -149,6 +194,112 @@
 				20BD0F63270B08420066ACF5 /* Assets.xcassets */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		20F2BCFA270C68B4009EF10F /* ToLoad_Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				20F2BD02270C691B009EF10F /* Structs */,
+				20F2BD01270C6912009EF10F /* Loaders */,
+			);
+			path = ToLoad_Alamofire;
+			sourceTree = "<group>";
+		};
+		20F2BCFB270C68C4009EF10F /* ToCache_Realm */ = {
+			isa = PBXGroup;
+			children = (
+				20F2BD03270C6929009EF10F /* Objects */,
+				20F2BD04270C6935009EF10F /* Operations */,
+			);
+			path = ToCache_Realm;
+			sourceTree = "<group>";
+		};
+		20F2BCFC270C68D1009EF10F /* CategoriesVC */ = {
+			isa = PBXGroup;
+			children = (
+				20C164C8270B0F5E00C98437 /* CategoriesViewController.swift */,
+				20F2BD0D270C6992009EF10F /* CategoriesViewModel.swift */,
+				20F2BD29270C6A6F009EF10F /* CategoriesTableViewCell.swift */,
+			);
+			path = CategoriesVC;
+			sourceTree = "<group>";
+		};
+		20F2BCFD270C68DF009EF10F /* SubCategoriesVC */ = {
+			isa = PBXGroup;
+			children = (
+				20C164CA270B0F8600C98437 /* SubCategoriesViewController.swift */,
+				20F2BD0B270C6986009EF10F /* SubCategoriesViewModel.swift */,
+				20F2BD27270C6A66009EF10F /* SubCategoriesTableViewCell.swift */,
+			);
+			path = SubCategoriesVC;
+			sourceTree = "<group>";
+		};
+		20F2BCFE270C68EB009EF10F /* AllGoodsVC */ = {
+			isa = PBXGroup;
+			children = (
+				20C164CE270B107500C98437 /* GoodsViewController.swift */,
+				20F2BD25270C6A49009EF10F /* GoodsTableViewCell.swift */,
+				20F2BD09270C6979009EF10F /* GoodsViewModel.swift */,
+				20F2BD2B270C6A91009EF10F /* GoodsCollectionViewCell.swift */,
+			);
+			path = AllGoodsVC;
+			sourceTree = "<group>";
+		};
+		20F2BCFF270C68F9009EF10F /* GoodVC */ = {
+			isa = PBXGroup;
+			children = (
+				20F2BCF8270C68A9009EF10F /* GoodViewController.swift */,
+				20F2BD07270C696D009EF10F /* GoodViewModel.swift */,
+			);
+			path = GoodVC;
+			sourceTree = "<group>";
+		};
+		20F2BD00270C6907009EF10F /* CartVC */ = {
+			isa = PBXGroup;
+			children = (
+				20C164CC270B104200C98437 /* CartViewController.swift */,
+				20F2BD05270C6961009EF10F /* CartViewModel.swift */,
+				20F2BD23270C6A2D009EF10F /* CartTableViewCell.swift */,
+			);
+			path = CartVC;
+			sourceTree = "<group>";
+		};
+		20F2BD01270C6912009EF10F /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				20F2BD1F270C6A0E009EF10F /* CategoriesLoader.swift */,
+				20F2BD21270C6A16009EF10F /* GoodsLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		20F2BD02270C691B009EF10F /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				20F2BD1B270C69F9009EF10F /* CategoriesStruct.swift */,
+				20F2BD1D270C6A02009EF10F /* GoodsStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		20F2BD03270C6929009EF10F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				20F2BD0F270C69A2009EF10F /* CategoriesObj.swift */,
+				20F2BD11270C69AE009EF10F /* SubCategoriesObj.swift */,
+				20F2BD13270C69BD009EF10F /* GoodsObj.swift */,
+				20F2BD15270C69C4009EF10F /* CartObj.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		20F2BD04270C6935009EF10F /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				20F2BD17270C69D2009EF10F /* SaveInfo.swift */,
+				20F2BD19270C69DC009EF10F /* RemoveOldInfo.swift */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 		2653C2B190607547586C2AF1 /* Frameworks */ = {
@@ -343,12 +494,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F2BD12270C69AE009EF10F /* SubCategoriesObj.swift in Sources */,
+				20F2BD14270C69BD009EF10F /* GoodsObj.swift in Sources */,
 				20BD0F5B270B08400066ACF5 /* AppDelegate.swift in Sources */,
+				20F2BD08270C696D009EF10F /* GoodViewModel.swift in Sources */,
 				20C164CB270B0F8600C98437 /* SubCategoriesViewController.swift in Sources */,
+				20F2BD1A270C69DC009EF10F /* RemoveOldInfo.swift in Sources */,
 				20C164CD270B104200C98437 /* CartViewController.swift in Sources */,
+				20F2BD22270C6A16009EF10F /* GoodsLoader.swift in Sources */,
 				20BD0F5D270B08400066ACF5 /* SceneDelegate.swift in Sources */,
+				20F2BD10270C69A2009EF10F /* CategoriesObj.swift in Sources */,
+				20F2BD26270C6A49009EF10F /* GoodsTableViewCell.swift in Sources */,
+				20F2BD2A270C6A6F009EF10F /* CategoriesTableViewCell.swift in Sources */,
+				20F2BD2C270C6A91009EF10F /* GoodsCollectionViewCell.swift in Sources */,
+				20F2BD20270C6A0E009EF10F /* CategoriesLoader.swift in Sources */,
+				20F2BD0A270C6979009EF10F /* GoodsViewModel.swift in Sources */,
+				20F2BD18270C69D2009EF10F /* SaveInfo.swift in Sources */,
+				20F2BD06270C6961009EF10F /* CartViewModel.swift in Sources */,
 				20C164C9270B0F5E00C98437 /* CategoriesViewController.swift in Sources */,
+				20F2BD24270C6A2D009EF10F /* CartTableViewCell.swift in Sources */,
+				20F2BD1E270C6A02009EF10F /* GoodsStruct.swift in Sources */,
 				20C164CF270B107500C98437 /* GoodsViewController.swift in Sources */,
+				20F2BD0C270C6986009EF10F /* SubCategoriesViewModel.swift in Sources */,
+				20F2BD16270C69C4009EF10F /* CartObj.swift in Sources */,
+				20F2BD0E270C6992009EF10F /* CategoriesViewModel.swift in Sources */,
+				20F2BD1C270C69F9009EF10F /* CategoriesStruct.swift in Sources */,
+				20F2BCF9270C68A9009EF10F /* GoodViewController.swift in Sources */,
+				20F2BD28270C6A66009EF10F /* SubCategoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
