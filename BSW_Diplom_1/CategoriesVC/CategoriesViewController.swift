@@ -24,22 +24,22 @@ class CategoriesViewController: UIViewController {
             }
         }*/
         
-        SubCategoriesLoader().loadSubCategoriesInfo{ all_sub_categories in
+        /*SubCategoriesLoader().loadSubCategoriesInfo{ all_sub_categories in
             self.all_sub_categories = all_sub_categories
             DispatchQueue.main.async {
                 for i in all_sub_categories{
                     print(i)
                 }
             }
-        }
+        }*/
         
-        /*GoodsLoader().loadGoodsInfo{ all_goods in
+        GoodsLoader().loadGoodsInfo{ all_goods in
             self.all_goods = all_goods
             DispatchQueue.main.async {
                 for i in all_goods{
                     print(i)
                 }
             }
-        }*/
+        }
     }
 }

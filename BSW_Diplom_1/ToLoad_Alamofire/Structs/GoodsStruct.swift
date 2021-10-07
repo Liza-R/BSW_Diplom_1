@@ -21,7 +21,7 @@ class AllGoodsInfo{
             sortOrder: String,
             englishName: String,
             article: String,
-            collection: String,
+            collection: String?,
             description: String,
             colorName: String,
             colorImageURL: String,

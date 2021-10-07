@@ -10,7 +10,7 @@ import Alamofire
 
 class GoodsLoader{
     func loadGoodsInfo(completion: @escaping ([AllGoodsInfo.Info_Mass]) -> Void){
-        AF.request(URL(string: URLs().categories_and_subcategories_url)!, method: .get)
+        AF.request(URL(string: URLs().goods_url)!, method: .get)
         .validate()
         .responseDecodable(of: AllGoodsInfo.Info_Mass.self) { (response) in
             let errors = response.error as Any
