@@ -9,7 +9,7 @@ import Foundation
 
 class URLs{
     let categories_and_subcategories_url = "http://blackstarshop.ru/index.php?route=api/v1/categories".encodeUrl,
-        goods_url = "http://blackstarshop.ru/index.php?route=api/v1/products&cat_id=ID".encodeUrl
+        goods_url = "http://blackstarshop.ru/index.php?route=api/v1/products&cat_id=\(id)".encodeUrl
 }
 
 extension String{
