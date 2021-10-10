@@ -14,6 +14,6 @@ class CategoriesViewController: UIViewController {
     @IBOutlet weak var categoriesTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-  
+        CategoriesViewModel().uploadCategories()
     }
 }

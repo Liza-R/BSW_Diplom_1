@@ -16,7 +16,7 @@ class CategoriesLoader{
             let errors = response.error as Any
             print(String(describing: errors), "error --> load all categories and subcategories info", response.response?.statusCode as Any)
             guard let all_categories_info = response.value else { return }
-                completion([all_categories_info])
+            completion([all_categories_info])
         }
     }
 }
