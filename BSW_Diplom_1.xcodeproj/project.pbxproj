@@ -245,8 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				20C164CE270B107500C98437 /* GoodsViewController.swift */,
-				20F2BD25270C6A49009EF10F /* GoodsTableViewCell.swift */,
 				20F2BD09270C6979009EF10F /* GoodsViewModel.swift */,
+				20F2BD25270C6A49009EF10F /* GoodsTableViewCell.swift */,
 				20F2BD2B270C6A91009EF10F /* GoodsCollectionViewCell.swift */,
 			);
 			path = AllGoodsVC;
