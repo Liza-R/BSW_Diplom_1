@@ -9,23 +9,23 @@ import Foundation
 
 class CategoriesViewModel{
     
-    private var all_categories: [AllCategoriesInfo.Info_Mass] = []
+    private var all_categories: [AllCategoriesInfo.DecodedArray] = []
     
     init(){
         uploadCategories()
     }
     
     func uploadCategories(){
-        var names: [String] = [],
-            sortOrders: [String] = [],
-            images: [String] = [],
-            iconImages: [String] = [],
-            iconImageActivites: [String] = []
+//        var names: [String] = [],
+//            sortOrders: [String] = [],
+//            images: [String] = [],
+//            iconImages: [String] = [],
+//            iconImageActivites: [String] = []
 
         CategoriesLoader().loadCategoriesInfo{ all_categories in
             self.all_categories = all_categories
             DispatchQueue.main.async {
-                for i in all_categories{
+                /*for i in all_categories{
                     names.append(i._0_?.name ?? "Name Not Found")
                     names.append(i._156_?.name ?? "Name Not Found")
                     names.append(i._165_?.name ?? "Name Not Found")
@@ -65,7 +65,7 @@ class CategoriesViewModel{
                     iconImageActivites.append(i._67_?.iconImageActive ?? "iconImageActive Not Found")
                     iconImageActivites.append(i._68_?.iconImageActive ?? "iconImageActive Not Found")
                     iconImageActivites.append(i._69_?.iconImageActive ?? "iconImageActive Not Found")
-                }
+                }*/
             }
         }
     }
