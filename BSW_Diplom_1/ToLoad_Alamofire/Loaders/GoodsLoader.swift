@@ -9,10 +9,10 @@ import Foundation
 import Alamofire
 
 class GoodsLoader{
-    func loadGoodsInfo(completion: @escaping ([AllGoodsInfo.Info_Mass]) -> Void){
+    func loadGoodsInfo(completion: @escaping ([AllGoodsInfo.DecodedArray]) -> Void){
         AF.request(URL(string: URLs().goods_url)!, method: .get)
         .validate()
-        .responseDecodable(of: AllGoodsInfo.Info_Mass.self) { (response) in
+        .responseDecodable(of: AllGoodsInfo.DecodedArray.self) { (response) in
             let errors = response.error as Any
             print(String(describing: errors), "error --> load all goods info", response.response?.statusCode as Any)
             guard let all_goods_info = response.value else { return }

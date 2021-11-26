@@ -42,7 +42,7 @@ class AllCategoriesInfo{
             subcategories: [SubCat]?
         
         private enum CatCodingKeys: CodingKey{
-            case name, sortOrder, image, iconImage, iconImageActive, subcategories
+            case name, image, iconImage, iconImageActive, subcategories
         }
 
         init(from decoder: Decoder) throws {
@@ -63,7 +63,7 @@ class AllCategoriesInfo{
             type: String
         
         private enum SubCatKeys: CodingKey{
-            case id, iconImage, sortOrder, name, type
+            case id, iconImage, name, type
         }
         
         init(from decoder: Decoder) throws {

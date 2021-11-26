@@ -16,56 +16,32 @@ class CategoriesViewModel{
     }
     
     func uploadCategories(){
-//        var names: [String] = [],
-//            sortOrders: [String] = [],
-//            images: [String] = [],
-//            iconImages: [String] = [],
-//            iconImageActivites: [String] = []
+        var idSubCat: [String] = [],
+            iconImsubCat: [String] = [],
+            nameSubCat: [String] = [],
+            typeSubCat: [String] = []
 
         CategoriesLoader().loadCategoriesInfo{ all_categories in
             self.all_categories = all_categories
             DispatchQueue.main.async {
-                /*for i in all_categories{
-                    names.append(i._0_?.name ?? "Name Not Found")
-                    names.append(i._156_?.name ?? "Name Not Found")
-                    names.append(i._165_?.name ?? "Name Not Found")
-                    names.append(i._233_?.name ?? "Name Not Found")
-                    names.append(i._67_?.name ?? "Name Not Found")
-                    names.append(i._68_?.name ?? "Name Not Found")
-                    names.append(i._69_?.name ?? "Name Not Found")
-                    
-                    sortOrders.append(i._0_?.sortOrder ?? "sortOrder Not Found")
-                    sortOrders.append(i._156_?.sortOrder ?? "sortOrder Not Found")
-                    sortOrders.append(i._165_?.sortOrder ?? "sortOrder Not Found")
-                    sortOrders.append(i._233_?.sortOrder ?? "sortOrder Not Found")
-                    sortOrders.append(i._67_?.sortOrder ?? "sortOrder Not Found")
-                    sortOrders.append(i._68_?.sortOrder ?? "sortOrder Not Found")
-                    sortOrders.append(i._69_?.sortOrder ?? "sortOrder Not Found")
-                    
-                    images.append(i._0_?.image ?? "Image Not Found")
-                    images.append(i._156_?.image ?? "Image Not Found")
-                    images.append(i._165_?.image ?? "Image Not Found")
-                    images.append(i._233_?.image ?? "Image Not Found")
-                    images.append(i._67_?.image ?? "Image Not Found")
-                    images.append(i._68_?.image ?? "Image Not Found")
-                    images.append(i._69_?.image ?? "Image Not Found")
-                    
-                    iconImages.append(i._0_?.iconImage ?? "iconImage Not Found")
-                    iconImages.append(i._156_?.iconImage ?? "iconImage Not Found")
-                    iconImages.append(i._165_?.iconImage ?? "iconImage Not Found")
-                    iconImages.append(i._233_?.iconImage ?? "iconImage Not Found")
-                    iconImages.append(i._67_?.iconImage ?? "iconImage Not Found")
-                    iconImages.append(i._68_?.iconImage ?? "iconImage Not Found")
-                    iconImages.append(i._69_?.iconImage ?? "iconImage Not Found")
-                    
-                    iconImageActivites.append(i._0_?.iconImageActive ?? "iconImageActive Not Found")
-                    iconImageActivites.append(i._156_?.iconImageActive ?? "iconImageActive Not Found")
-                    iconImageActivites.append(i._165_?.iconImageActive ?? "iconImageActive Not Found")
-                    iconImageActivites.append(i._233_?.iconImageActive ?? "iconImageActive Not Found")
-                    iconImageActivites.append(i._67_?.iconImageActive ?? "iconImageActive Not Found")
-                    iconImageActivites.append(i._68_?.iconImageActive ?? "iconImageActive Not Found")
-                    iconImageActivites.append(i._69_?.iconImageActive ?? "iconImageActive Not Found")
-                }*/
+                for i in all_categories{
+                    for j in i.array{
+                        if !(j.subcategories?.isEmpty ?? false){
+                            for h in j.subcategories!{
+                                idSubCat.append(h.id)
+                                iconImsubCat.append(h.iconImage ?? "Icon Images Not Found")
+                                nameSubCat.append(h.name)
+                                typeSubCat.append(h.type)
+                            }
+                        }else{
+                            idSubCat.append("")
+                            iconImsubCat.append("")
+                            nameSubCat.append("")
+                            typeSubCat.append("")
+                        }
+                        SaveCategories().savingAllCAtegoriesInfo(prodId: j.prodId, name: j.name, image: j.image ?? "Images Not Found", iconImage: j.iconImage ?? "Icon Images Not Found", iconImageActive: j.iconImageActive ?? "Icon Image Activites Not Found", idSubCat: idSubCat, iconImsubCat: iconImsubCat, nameSubCat: nameSubCat, typeSubCat: typeSubCat)
+                    }
+                }
             }
         }
     }

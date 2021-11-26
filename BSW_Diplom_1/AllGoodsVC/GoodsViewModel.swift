@@ -8,7 +8,7 @@
 import Foundation
 
 class GoodsViewModel{
-    private var all_goods: [AllGoodsInfo.Info_Mass] = []
+    private var all_goods: [AllGoodsInfo.DecodedArray] = []
     func uploadGoods(){
         /*GoodsLoader().loadGoodsInfo{ all_goods in
             self.all_goods = all_goods
