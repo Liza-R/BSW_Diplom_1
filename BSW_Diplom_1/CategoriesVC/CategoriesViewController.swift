@@ -7,7 +7,7 @@
 
 import UIKit
 
-var id = "311"
+var id = "292"
 
 class CategoriesViewController: UIViewController {
     

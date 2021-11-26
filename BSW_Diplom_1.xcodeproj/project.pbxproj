@@ -41,7 +41,6 @@
 		20F2BD2A270C6A6F009EF10F /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD29270C6A6F009EF10F /* CategoriesTableViewCell.swift */; };
 		20F2BD2C270C6A91009EF10F /* GoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD2B270C6A91009EF10F /* GoodsCollectionViewCell.swift */; };
 		20F2BD2E270C6B46009EF10F /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD2D270C6B46009EF10F /* URLs.swift */; };
-		20F2BD30270C96B7009EF10F /* SubCategoriesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD2F270C96B7009EF10F /* SubCategoriesStruct.swift */; };
 		20F2BD32270C96F2009EF10F /* SubCategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2BD31270C96F2009EF10F /* SubCategoriesLoader.swift */; };
 		78CD18F1A83B013F74737F45 /* Pods_BSW_Diplom_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA28A36009622CAEC4FE1E5 /* Pods_BSW_Diplom_1.framework */; };
 /* End PBXBuildFile section */
@@ -102,7 +101,6 @@
 		20F2BD29270C6A6F009EF10F /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		20F2BD2B270C6A91009EF10F /* GoodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsCollectionViewCell.swift; sourceTree = "<group>"; };
 		20F2BD2D270C6B46009EF10F /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		20F2BD2F270C96B7009EF10F /* SubCategoriesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesStruct.swift; sourceTree = "<group>"; };
 		20F2BD31270C96F2009EF10F /* SubCategoriesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesLoader.swift; sourceTree = "<group>"; };
 		322EFE15AFDC833EC8B3532C /* Pods-BSW_Diplom_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSW_Diplom_1.release.xcconfig"; path = "Target Support Files/Pods-BSW_Diplom_1/Pods-BSW_Diplom_1.release.xcconfig"; sourceTree = "<group>"; };
 		3AA28A36009622CAEC4FE1E5 /* Pods_BSW_Diplom_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSW_Diplom_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				20F2BD1B270C69F9009EF10F /* CategoriesStruct.swift */,
-				20F2BD2F270C96B7009EF10F /* SubCategoriesStruct.swift */,
 				20F2BD1D270C6A02009EF10F /* GoodsStruct.swift */,
 			);
 			path = Structs;
@@ -508,7 +505,6 @@
 				20BD0F5B270B08400066ACF5 /* AppDelegate.swift in Sources */,
 				20F2BD2E270C6B46009EF10F /* URLs.swift in Sources */,
 				20F2BD08270C696D009EF10F /* GoodViewModel.swift in Sources */,
-				20F2BD30270C96B7009EF10F /* SubCategoriesStruct.swift in Sources */,
 				20C164CB270B0F8600C98437 /* SubCategoriesViewController.swift in Sources */,
 				20F2BD1A270C69DC009EF10F /* RemoveOldInfo.swift in Sources */,
 				20C164CD270B104200C98437 /* CartViewController.swift in Sources */,
