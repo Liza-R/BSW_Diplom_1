@@ -9,15 +9,19 @@ import Foundation
 import RealmSwift
 
 class AllCategories: Object {
+    let categories = List<Category>()
+}
+
+class Category: Object {
     @objc dynamic var id = ""
     @objc dynamic var name = ""
     @objc dynamic var image = ""
     @objc dynamic var iconImage = ""
     @objc dynamic var iconImageActive = ""
-    let subcategories = List<AllSubCategories>()
+    let subcategories = List<SubCategory>()
 }
 
-class AllSubCategories: Object{
+class SubCategory: Object{
     @objc dynamic var id = ""
     @objc dynamic var iconImage = ""
     @objc dynamic var name = ""
