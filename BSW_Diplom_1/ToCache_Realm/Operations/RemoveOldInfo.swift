@@ -10,7 +10,7 @@ import Foundation
 class RemoveOldInfo{
     func removeOldCatsInfo(){
         let modelCurrent = SaveCategories().realm.objects(AllCategories.self)
-        if modelCurrent.first != nil && modelCurrent.count > 2{
+        if modelCurrent.first != nil && modelCurrent.count > 1{
             try! SaveCategories().realm.write {
                 SaveCategories().realm.delete(modelCurrent.first!)
             }

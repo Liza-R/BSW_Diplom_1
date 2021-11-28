@@ -12,30 +12,39 @@ class SaveCategories{
     var realm = try! Realm()
     private var allCats = AllCategories()
 
-    func savingAllCAtegoriesInfo(prodId: String, name: String, image: String, iconImage: String, iconImageActive: String, idSubCat: [String], iconImsubCat: [String], nameSubCat: [String], typeSubCat: [String]){
-        let infoCateg = Category()
-        
-        infoCateg.id = prodId
-        infoCateg.name = name
-        infoCateg.image = image
-        infoCateg.iconImage = iconImage
-        infoCateg.iconImageActive = iconImageActive
-        
-        for (i, j) in idSubCat.enumerated(){
-            let infoSubCateg = SubCategory()
-            infoSubCateg.id = j
-            infoSubCateg.iconImage = iconImsubCat[i]
-            infoSubCateg.name = nameSubCat[i]
-            infoSubCateg.type = typeSubCat[i]
-            infoCateg.subcategories.append(infoSubCateg)
+    func savingAllCategoriesInfo(prodId: [String], name: [String], image: [String], iconImage: [String], iconImageActive: [String], idSubCat: [[String]], iconImsubCat: [[String]], nameSubCat: [[String]], typeSubCat: [[String]]){
+        for (i, j) in prodId.enumerated(){
+            let infoCateg = Category()
+            infoCateg.id = j
+            infoCateg.name = name[i]
+            infoCateg.image = image[i]
+            infoCateg.iconImage = iconImage[i]
+            infoCateg.iconImageActive = iconImageActive[i]
+            if !idSubCat[i].isEmpty{
+                for k in 0...idSubCat[i].count - 1{
+                    let infoSubCateg = SubCategory()
+                    infoSubCateg.id = idSubCat[i][k]
+                    infoSubCateg.iconImage = iconImsubCat[i][k]
+                    infoSubCateg.name = nameSubCat[i][k]
+                    infoSubCateg.type = typeSubCat[i][k]
+                    infoCateg.subcategories.append(infoSubCateg)
+                }
+            }else{
+                let infoSubCateg = SubCategory()
+                infoSubCateg.id = ""
+                infoSubCateg.iconImage = ""
+                infoSubCateg.name = ""
+                infoSubCateg.type = ""
+                infoCateg.subcategories.append(infoSubCateg)
+            }
+            allCats.categories.append(infoCateg)
         }
-        allCats.categories.append(infoCateg)
+        
         try! realm.write{
             realm.add(allCats)
         }
-        print(allCats)
-        print(ReturnInfoModels().returnAllCategories().count)
         //savingAllUsers.accept(true)
-        //RemoveOldInfo().removeOldUsersInfo()
+        RemoveOldInfo().removeOldCatsInfo()
+        print(allCats)
     }
 }
