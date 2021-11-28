@@ -10,9 +10,10 @@ import RealmSwift
 
 class SaveCategories{
     var realm = try! Realm()
+    private var allCats = AllCategories()
 
     func savingAllCAtegoriesInfo(prodId: String, name: String, image: String, iconImage: String, iconImageActive: String, idSubCat: [String], iconImsubCat: [String], nameSubCat: [String], typeSubCat: [String]){
-        let infoCateg = AllCategories()
+        let infoCateg = Category()
         
         infoCateg.id = prodId
         infoCateg.name = name
@@ -21,17 +22,18 @@ class SaveCategories{
         infoCateg.iconImageActive = iconImageActive
         
         for (i, j) in idSubCat.enumerated(){
-            let infoSubCateg = AllSubCategories()
+            let infoSubCateg = SubCategory()
             infoSubCateg.id = j
             infoSubCateg.iconImage = iconImsubCat[i]
             infoSubCateg.name = nameSubCat[i]
             infoSubCateg.type = typeSubCat[i]
             infoCateg.subcategories.append(infoSubCateg)
         }
+        allCats.categories.append(infoCateg)
         try! realm.write{
-            realm.add(infoCateg)
+            realm.add(allCats)
         }
-        print(infoCateg)
+        print(allCats)
         print(ReturnInfoModels().returnAllCategories().count)
         //savingAllUsers.accept(true)
         //RemoveOldInfo().removeOldUsersInfo()
