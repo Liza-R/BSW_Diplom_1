@@ -6,8 +6,6 @@
 target ‘BSW_Diplom_1’ do
     use_frameworks!
     pod 'Alamofire'
-    pod 'RxSwift'
-    pod 'RxCocoa'
     pod 'RealmSwift'
     
 end

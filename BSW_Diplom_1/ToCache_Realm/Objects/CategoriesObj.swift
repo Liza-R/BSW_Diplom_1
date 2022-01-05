@@ -8,10 +8,6 @@
 import Foundation
 import RealmSwift
 
-class AllCategories: Object {
-    let categories = List<Category>()
-}
-
 class Category: Object {
     @objc dynamic var id = ""
     @objc dynamic var name = ""

@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 class ReturnInfoModels{
-    func returnAllCategories() -> Results<AllCategories>{
-        return SaveCategories().realm.objects(AllCategories.self)
+    func returnAllCategories() -> Results<Category>{
+        return SaveCategories().realm.objects(Category.self)
     }
 }

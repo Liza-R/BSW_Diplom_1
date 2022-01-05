@@ -10,11 +10,7 @@ import Foundation
 class CategoriesViewModel{
     
     private var all_categories: [AllCategoriesInfo.DecodedArray] = []
-    
-    init(){
-        uploadCategories()
-    }
-    
+
     func uploadCategories(){
         var idSubCat = [[String]](),
             iconImsubCat = [[String]](),
@@ -54,7 +50,7 @@ class CategoriesViewModel{
                         }
                     }
                 }
-                SaveCategories().savingAllCategoriesInfo(prodId: prodId, name: name, image: image, iconImage: iconImage, iconImageActive: iconImageActive, idSubCat: idSubCat, iconImsubCat: iconImsubCat, nameSubCat: nameSubCat, typeSubCat: typeSubCat)
+                SaveCategories().saveCategories(prodId: prodId, name: name, image: image, iconImage: iconImage, iconImageActive: iconImageActive, idSubCat: idSubCat, iconImsubCat: iconImsubCat, nameSubCat: nameSubCat, typeSubCat: typeSubCat)
             }
         }
     }

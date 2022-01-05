@@ -10,9 +10,11 @@ import RealmSwift
 
 class SaveCategories{
     var realm = try! Realm()
-    private var allCats = AllCategories()
-
-    func savingAllCategoriesInfo(prodId: [String], name: [String], image: [String], iconImage: [String], iconImageActive: [String], idSubCat: [[String]], iconImsubCat: [[String]], nameSubCat: [[String]], typeSubCat: [[String]]){
+    
+    func saveCategories(prodId: [String], name: [String], image: [String], iconImage: [String], iconImageActive: [String], idSubCat: [[String]], iconImsubCat: [[String]], nameSubCat: [[String]], typeSubCat: [[String]]){
+        
+        RemoveOldInfo().removeOldCategoriesInfo(saveRealm: realm)
+        
         for (i, j) in prodId.enumerated(){
             let infoCateg = Category()
             infoCateg.id = j
@@ -37,14 +39,10 @@ class SaveCategories{
                 infoSubCateg.type = ""
                 infoCateg.subcategories.append(infoSubCateg)
             }
-            allCats.categories.append(infoCateg)
+
+            try! realm.write{
+                realm.add(infoCateg)
+            }
         }
-        
-        try! realm.write{
-            realm.add(allCats)
-        }
-        //savingAllUsers.accept(true)
-        RemoveOldInfo().removeOldCatsInfo()
-        print(allCats)
     }
 }
